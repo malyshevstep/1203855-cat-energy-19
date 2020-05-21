@@ -1,0 +1,63 @@
+.receive-gift {
+  display: flex;
+  flex-direction: column;
+  width: 87.5%;
+  min-height: 289px;
+  margin: 0 auto;
+
+  background: url(../img/gift-photo-mobile@1x.jpg) no-repeat;
+  background-size: 100% 289px;
+}
+
+.receive-gift__description {
+  position: relative;
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  max-width: 162px;
+  height: 56px;
+  text-align: center;
+  margin: 0;
+  margin-top: 62px;
+  margin-left: 58px;
+}
+
+.receive-gift__gift {
+  position: relative;
+  left: 40%;
+  margin-top: 64px;
+}
+
+@media(min-width:@tablet-width) {
+  .receive-gift {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 200px;
+    box-sizing: border-box;
+    width: 92.3%;
+    padding-bottom: 143px;
+
+    background: url("/img/gift-photo-tablet@1x.jpg") no-repeat;
+    background-size: 100% 200px;
+  }
+
+  .receive-gift__gift {
+    left: 12.8%;
+    margin-top: 64px;
+  }
+
+  .receive-gift__description {
+    margin-top: 72px;
+    margin-right: 125px;
+
+    text-align: left;
+  }
+
+}
+
+@media(min-width:@desktop-width) {
+  .receive-gift {
+    display: none;
+  }
+}

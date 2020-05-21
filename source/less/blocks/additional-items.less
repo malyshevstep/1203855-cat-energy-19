@@ -1,0 +1,174 @@
+.additional-items {
+  position: relative;
+  padding-top: 28px;
+  overflow: hidden;
+}
+
+.additional-items__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.additional-items__header {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding-right: 20px;
+  margin: 0;
+  margin-bottom: 34px;
+
+  background-color: #ffffff;
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  vertical-align: baseline;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.additional-items__header::after,
+.additional-items__header::before {
+  content: "";
+  position: absolute;
+  top: 57%;
+  z-index: -1;
+  width: 100vw;
+  height: 3px;
+  background-color: #68b738;
+}
+
+.additional-items__header::after {
+  left: 100%
+}
+
+.additional-items_headerwrapper {
+  position: relative;
+}
+
+.additional-items_headerwrapper::before {
+  box-sizing: inherit;
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 15px;
+  right: -20px;
+  background-color: #68b738;
+  z-index: -1;
+}
+
+.additional-items-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.additional-items__receivegift {
+  display: none;
+}
+
+@media(min-width:@tablet-width) {
+  .additional-items {
+    padding-top: 65px;
+  }
+
+  .additional-items__wrapper {
+    padding: 0 30px;
+  }
+
+  .additional-items__header {
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 37px;
+    padding-right: 36px;
+    margin: 0;
+    margin-bottom: 79px;
+  }
+
+  .additional-items__header::before {
+    right: 100%;
+  }
+
+  .additional-items__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media(min-width:@desktop-width) {
+  .additional-items {
+    padding-top: 73px;
+  }
+
+  .additional-items__wrapper {
+    width: 100%;
+    max-width: 1220px;
+    padding: 0 40px;
+  }
+
+  .additional-items__header {
+    padding: 0;
+    padding-left: 39px;
+    padding-right: 35px;
+    margin-left: -40px;
+    margin-bottom: 80px;
+  }
+
+  .additional-items__header::after,
+  .additional-items__header::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    z-index: -1;
+    width: 100vw;
+    height: 3px;
+    background-color: #68b738;
+  }
+
+  .additional-items__header::after {
+    left: 100%
+  }
+
+  .additional-items__header::before {
+    right: 100%;
+  }
+
+  .additional-items__connector {
+    display: flex;
+  }
+
+  .additional-items-list {
+    width: 895px;
+  }
+
+  .additional-items__receivegift {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    height: 289px;
+    margin-left: 80px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .receivegift__gift {
+    margin-top: 65px;
+    margin-left: 96px;
+  }
+
+  .receivegift__description {
+    width: 162px;
+    height: 56px;
+    margin-top: 61px;
+    margin-left: 43px;
+    margin-bottom: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,130 @@
+.page-footer {
+  min-width: 320px;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-footer__logo {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 39px;
+  padding-bottom: 26px;
+}
+
+.socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 21px;
+
+  list-style: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.socials-list__item:nth-child(2) {
+  margin-left: 36px;
+  margin-right: 40px;
+}
+
+.copyright {
+  display: flex;
+  min-height: 78px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright__link {
+  padding-right: 22px;
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+  padding-top: 5px;
+  overflow: visible;
+  fill: #666;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    min-width: 768px;
+
+    background-color: #f2f2f2;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .page-footer__logo {
+    padding-top: 67px;
+    padding-bottom: 61px;
+    padding-left: 1px;
+  }
+
+  .socials-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 66px;
+    padding-left: 155px;
+    padding-bottom: 21px;
+
+    border: none;
+    list-style: none;
+  }
+
+  .socials-list__link {
+    display: none;
+  }
+
+  .socials-list__link--tablet {
+    display: block;
+  }
+
+  .copyright {
+    padding: 0;
+  }
+
+  .copyright__link {
+    padding-left: 0;
+  }
+
+  .socials-list__link--tablet svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .copyright__logo {
+    position: relative;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 100%;
+  }
+
+  .page-footer__wrapper {
+    max-width: 1220px;
+    width: 100%;
+    padding: 0 40px;
+  }
+}
