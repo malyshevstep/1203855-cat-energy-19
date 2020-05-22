@@ -33,10 +33,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/min-normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--index">
       <div class="page-header__wrapper">
         <h1 class="visually-hidden">Cat Energy</h1>
@@ -110,21 +113,21 @@
           </p>
           <img
             class="promo-title__image"
-            src="../img/index-can-mobile@1x.png"
+            src="img/index-can-mobile@1x.png"
             alt="Баночка еды с курицей"
             width="280"
             height="270"
           />
           <img
             class="hidden-image promo-title__image-tablet"
-            src="../img/index-can-tablet@1x.jpg"
+            src="img/index-can-tablet@1x.jpg"
             alt="Баночка еды с курицей"
             width="709"
             height="609"
           />
           <img
             class="hidden-image promo-title__image-desktop"
-            src="../img/index-can-desktop@1x.png"
+            src="img/index-can-desktop@1x.png"
             alt="Баночка еды с курицей"
             width="552"
             height="499"
@@ -231,20 +234,20 @@
         <div class="promo_example_sliderwrap">
           <img
             class="promo-example__fatcat"
-            src="../img/before-mobile@1x.png"
+            src="img/before-mobile@1x.png"
             alt="Толстый кот до похудения"
             height="232"
           />
           <img
             class="promo-example__fatcat-tablet hidden-image"
-            src="../img/before-tablet@1x.png"
+            src="img/before-tablet@1x.png"
             alt="Толстый кот до похудения"
             width="690"
             height="499"
           />
           <img
             class="promo-example__thickcat-tablet hidden-image"
-            src="../img/after-tablet@1x.png"
+            src="img/after-tablet@1x.png"
             alt="Толстый кот до похудения"
             width="690"
             height="499"
@@ -289,7 +292,7 @@
           <a class="page-footer__logo-link" href="index.html">
             <img
               class="page-footer__logo-image"
-              src="../img/logo-footer.svg"
+              src="img/logo-footer.svg"
               alt="Лого Cat Energy"
               width="128"
               height="24"
