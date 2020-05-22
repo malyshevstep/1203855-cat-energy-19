@@ -56,7 +56,7 @@
   background-color: @bg-green;
   width: 60px;
   height: 60px;
-  left: 0px;
+  left: 0;
   top: 1px;
 }
 
@@ -100,8 +100,7 @@
   top: 5px;
 }
 
-@media(min-width:@tablet-width) {
-
+@media (min-width: @tablet-width) {
   .promo-instructions {
     border-bottom: 1px solid #f2f2f2;
   }
@@ -112,18 +111,19 @@
   }
 
   .promo-instructions__header {
+    min-width: 371px;
+    margin-top: 39px;
+
     font-size: 60px;
     line-height: 60px;
-    margin-top: 39px;
-    min-width: 371px;
   }
 
   .promo-instructions__list {
     display: flex;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
     margin-top: 72px;
   }
 
@@ -141,7 +141,7 @@
 
   .instructions-list__description {
     width: 245px;
-    padding-left: 0px;
+    padding-left: 0;
     padding-top: 95px;
     padding-bottom: 6px;
 
@@ -156,28 +156,28 @@
     background-color: @bg-green;
     width: 80px;
     height: 80px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
   }
 
   .instructions-list__item:nth-child(1)::after {
     position: absolute;
     content: "";
-    background-image: url("../img/advantage-leaf@1x.png");
     width: 50px;
     height: 50px;
     left: 15px;
     top: 15px;
+    background-image: url("../img/advantage-leaf@1x.png");
   }
 
   .instructions-list__item:nth-child(2)::after {
     position: absolute;
     content: "";
-    background-image: url("../img/advantage-powder@1x.png");
     width: 50px;
     height: 50px;
     left: 15px;
     top: 15px;
+    background-image: url("../img/advantage-powder@1x.png");
   }
 
   .instructions-list__item:nth-child(3)::after {
@@ -201,15 +201,16 @@
   }
 
   .instructions-list__number {
-    font-family: "Oswald-Regular", "Arial", sans-serif;
-    font-size: 281px;
-    color: #f2f2f2;
     position: absolute;
     clip: auto;
     overflow: visible;
-    z-index: -1;
     top: -100px;
     left: 126px;
+
+    font-family: "Oswald-Regular", "Arial", sans-serif;
+    font-size: 281px;
+    color: #f2f2f2;
+    z-index: -1;
   }
 }
 
@@ -226,7 +227,7 @@
 
   .promo-instructions__list {
     flex-wrap: nowrap;
-    padding-left: 0px;
+    padding-left: 0;
     margin-top: 72px;
     width: auto;
   }
@@ -251,7 +252,7 @@
   }
 
   .promo-instructions__header {
-    margin-top: 77px;
-    padding-left: 0px;
+    margin-top: 69px;
+    padding-left: 0;
   }
 }
