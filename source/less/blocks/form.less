@@ -10,7 +10,6 @@
   margin: 0;
   padding-top: 25px;
 
-
   color: #111111;
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 36px;
@@ -163,15 +162,15 @@
   font-size: 16px;
 }
 
-.second-list input:hover~.checkmark {
+.second-list input:hover ~ .checkmark {
   border: 1px solid #bababa;
 }
 
-.second-list input:checked~.checkmark {
+.second-list input:checked ~ .checkmark {
   border: 1px solid #bababa;
 }
 
-.second-list input:disabled~.checkmark {
+.second-list input:disabled ~ .checkmark {
   opacity: 0.3;
 }
 
@@ -187,7 +186,7 @@
   left: 8px;
 }
 
-.second-list input:checked~.checkmark::after {
+.second-list input:checked ~ .checkmark::after {
   display: block;
 }
 
@@ -229,7 +228,7 @@
 }
 
 .additional-items__header::after {
-  left: 100%
+  left: 100%;
 }
 
 .third-list {
@@ -346,7 +345,7 @@
 }
 
 .fourth-set__legend::after {
-  left: 100%
+  left: 100%;
 }
 
 .fourth-set__area {
@@ -407,7 +406,7 @@
 }
 
 .fifth-set__legend::after {
-  left: 100%
+  left: 100%;
 }
 
 .fifth-set__list {
@@ -452,7 +451,7 @@
   padding-left: 46px;
 }
 
-.fifth-list__input:checked~.fifth-list__checkmark::before {
+.fifth-list__input:checked ~ .fifth-list__checkmark::before {
   position: absolute;
   content: "";
   background-image: url("../img/icon-tick.svg");
@@ -482,7 +481,7 @@
   white-space: nowrap;
 }
 
-@media(min-width:@tablet-width) {
+@media (min-width: @tablet-width) {
   .form-main {
     min-width: 768px;
   }
@@ -635,7 +634,7 @@
   }
 
   .third-set__legend::after {
-    left: 100%
+    left: 100%;
   }
 
   .third-set__legend::before {
@@ -790,7 +789,7 @@
     padding-left: 60px;
   }
 
-  .fifth-list__input:checked~.fifth-list__checkmark::before {
+  .fifth-list__input:checked ~ .fifth-list__checkmark::before {
     width: 21px;
     height: 16px;
     top: 11px;
@@ -822,11 +821,10 @@
     margin-left: 61px;
 
     font-size: 16px;
-
   }
 }
 
-@media(min-width:@desktop-width) {
+@media (min-width: @desktop-width) {
   .form-title__wrapper {
     padding: 0 40px;
     max-width: 1220px;
@@ -999,5 +997,4 @@
   .big-form__paragraph {
     margin-left: 82px;
   }
-
 }
