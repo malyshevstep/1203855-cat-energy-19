@@ -1,6 +1,5 @@
 .promo-contacts {
   margin: 0 auto;
-  padding-top: 36px;
 }
 
 .promo-contacts__title {
@@ -17,9 +16,16 @@
   text-transform: uppercase;
 }
 
+.promo-contacts__title span {
+  white-space: nowrap;
+}
+
 .promo-contacts__coordinates {
   position: relative;
   height: 362px;
+  background: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100% 400px;
 }
 
 .promo-contacts iframe {
@@ -135,6 +141,10 @@
     position: relative;
     width: 100%;
     height: 400px;
+
+    background: url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
   }
 
   .promo_contacts_city {
@@ -153,12 +163,13 @@
 
   .promo-contacts__pointer {
     position: absolute;
-    background-image: url("../img/map-pin.png");
-    background-repeat: no-repeat;
     width: 113px;
     height: 106px;
     top: 26%;
     left: 43%;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
     z-index: 10;
   }
 }
@@ -185,7 +196,7 @@
 
   .promo-contacts__address {
     min-width: 167px;
-    padding-top: 9px;
+    padding-top: 6px;
 
     font-size: 16px;
     text-align: left;
@@ -203,8 +214,8 @@
     position: absolute;
     width: 570px;
     height: 201px;
-    margin-left: 92px;
-    margin-top: 98px;
+    margin-left: 3%;
+    margin-top: 92px;
 
     z-index: 2;
     background-color: #ffffff;
@@ -214,6 +225,10 @@
     position: relative;
     width: 100%;
     height: 400px;
+
+    background: url("../img/bg-map-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
   }
 
   .promo-contacts__map-tablet {
@@ -223,6 +238,7 @@
   .promo-contacts__pointer {
     top: 24%;
     left: 47%;
+
     z-index: 1;
   }
 }

@@ -45,6 +45,11 @@
   width: 50%;
 }
 
+.items-list__image {
+  width: 140px;
+  height: 144px;
+}
+
 .items-list__info {
   width: 50%;
 }
@@ -101,6 +106,11 @@
 .items-list__link:hover {
   background-color: #5eaa2f;
   cursor: pointer;
+}
+
+.items-list__link:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog__more {
@@ -161,6 +171,14 @@
   margin-top: 22px;
 }
 
+.show-more__button:hover {
+  background-color: #ebebeb;
+}
+
+.show-more__button:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .catalog-main {
     min-width: 768px;
@@ -173,7 +191,7 @@
   }
 
   .title-block__header {
-    padding-top: 52px;
+    padding-top: 61px;
     padding-bottom: 165px;
     margin: 0;
 
@@ -239,6 +257,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
   }
 
   .items-list__info {
@@ -248,19 +267,22 @@
     width: 78%;
   }
 
-  .items-list__image {
-    display: none;
-  }
-
   .items-list__link {
     width: 77.5%;
     font-size: 16px;
   }
 
-  .items-list__image-tablet {
+  .items-list__image {
     display: block;
     position: absolute;
-    top: -45px;
+    top: -48px;
+    width: 324px;
+    left: 0;
+    height: auto;
+  }
+
+  .items-list__image--big {
+    top: -84px;
   }
 
   .items-list__image-tablet--big {
@@ -362,8 +384,21 @@
   }
 
   .title-block__header {
-    padding-top: 71px;
+    padding-top: 65px;
     padding-bottom: 165px;
+  }
+
+  .items-list__image {
+    display: block;
+    position: absolute;
+    width: 324px;
+    height: auto;
+    top: -46px;
+    left: 0%;
+  }
+
+  .items-list__image--big {
+    top: -81px;
   }
 
   .items-list__wrapper {
@@ -372,16 +407,6 @@
 
   .items-list__itemimage {
     display: block;
-    width: auto;
-  }
-
-  .items-list__image-tablet {
-    top: -46px;
-    left: 18%;
-  }
-
-  .items-list__image-tablet--big {
-    left: 12%;
   }
 
   .items-list__info {
@@ -390,15 +415,16 @@
   }
 
   .items-list__title {
-    margin-top: 162px;
+    margin-top: 163px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .item-char {
     min-width: 169px;
-    min-height: 93px;
-    margin-top: 24px;
+    min-height: 98px;
+    margin: 0;
+    margin-top: 19px;
   }
 
   .items-list li:nth-child(2n) {
@@ -455,5 +481,15 @@
     padding-top: 55px;
     padding-bottom: 50px;
     margin: 0 auto;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .items-list__image {
+    top: -95px;
+  }
+
+  .items-list__image--big {
+    top: -95px;
   }
 }

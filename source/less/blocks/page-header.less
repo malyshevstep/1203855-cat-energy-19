@@ -20,6 +20,10 @@
   &__logo:hover {
     opacity: 0.8;
   }
+
+  &__logo:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__wrapper {
@@ -79,7 +83,6 @@
   text-decoration: none;
   color: #000000;
   font-weight: 400;
-  border-bottom: 2px solid @bg-green;
 }
 
 .page_header__icon-opener {
@@ -145,7 +148,11 @@
   }
 
   .page-header__menu-opener:checked ~ .main-nav {
+    visibility: visible;
+    width: auto;
     height: auto;
+    transition: none;
+    clip: initial;
   }
 
   .site-list {
@@ -155,11 +162,12 @@
     align-items: center;
     height: auto;
     width: 440px;
-    padding-top: 24px;
+    padding-top: 35px;
   }
 
   .site-list__item {
     min-width: auto;
+    height: auto;
     border: none;
   }
 
@@ -195,11 +203,7 @@
     color: #222222;
   }
 
-  .page-header__logo {
-    display: none;
-  }
-
-  .page-header__logo-tablet {
+  .page-header__logo-image {
     position: relative;
     clip: auto;
     width: initial;
@@ -207,12 +211,12 @@
     margin: 0;
     border: 0;
     padding: 0;
-    padding-top: 24px;
     overflow: visible;
   }
 
-  .page-header__logo-tablet-image {
-    height: 59px;
+  .page-header__logo {
+    padding-top: 24px;
+    padding-left: 0;
   }
 }
 
@@ -250,14 +254,11 @@
     background-size: cover;
   }
 
-  .page-header__logo-tablet {
-    display: none;
-  }
-
-  .page-header__logo-desktop {
+  .page-header__logo-image {
     position: relative;
     clip: auto;
     width: 203px;
+    max-width: 203px;
     height: 59px;
     margin: 0;
     border: 0;
@@ -267,8 +268,13 @@
     align-items: center;
   }
 
+  .page-header__logo {
+    padding: 0;
+  }
+
   .main-nav {
     min-width: 478px;
+    min-height: 70px;
   }
 
   .site-list {
@@ -299,13 +305,14 @@
   }
 
   .site-list__item__link--active {
+    border-bottom: 2px solid @bg-green;
     font-size: 20px;
     z-index: 100;
   }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .page-header__logo-desktop {
+  .page-header__logo {
     position: absolute;
   }
 }

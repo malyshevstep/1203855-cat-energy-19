@@ -34,7 +34,7 @@
   padding-top: 6px;
   padding-bottom: 6px;
 
-  font-family: "ArialMT", "Arial", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   color: #444444;
 }
@@ -53,51 +53,56 @@
 .instructions-list__item::before {
   position: absolute;
   content: "";
-  background-color: @bg-green;
   width: 60px;
   height: 60px;
   left: 0;
   top: 1px;
+
+  background-color: @bg-green;
 }
 
 .instructions-list__item:nth-child(1)::after {
   position: absolute;
   content: "";
-  background-image: url("../img/advantage-leaf@1x.png");
   width: 50px;
   height: 50px;
   left: 7px;
   top: 5px;
+
+  background-image: url("../img/advantage-leaf@1x.png");
 }
 
 .instructions-list__item:nth-child(2)::after {
   position: absolute;
   content: "";
-  background-image: url("../img/advantage-powder@1x.png");
   width: 50px;
   height: 50px;
   left: 7px;
   top: 5px;
+
+  background-image: url("../img/advantage-powder@1x.png");
 }
 
 .instructions-list__item:nth-child(3)::after {
   position: absolute;
   content: "";
-  background-image: url("../img/advantage-dining@1x.png");
   width: 50px;
   height: 50px;
   left: 7px;
   top: 5px;
+
+  background-image: url("../img/advantage-dining@1x.png");
 }
 
 .instructions-list__item:nth-child(4)::after {
   position: absolute;
   content: "";
-  background-image: url("../img/advantage-clock@1x.png");
   width: 50px;
   height: 50px;
   left: 7px;
   top: 5px;
+
+  background-image: url("../img/advantage-clock@1x.png");
 }
 
 @media (min-width: @tablet-width) {
@@ -112,7 +117,7 @@
 
   .promo-instructions__header {
     min-width: 371px;
-    margin-top: 39px;
+    margin-top: 44px;
 
     font-size: 60px;
     line-height: 60px;
@@ -142,7 +147,7 @@
   .instructions-list__description {
     width: 245px;
     padding-left: 0;
-    padding-top: 95px;
+    padding-top: 97px;
     padding-bottom: 6px;
 
     font-size: 16px;
@@ -150,14 +155,19 @@
     color: #444444;
   }
 
+  .instructions-list__description span {
+    white-space: nowrap;
+  }
+
   .instructions-list__item::before {
     position: absolute;
     content: "";
-    background-color: @bg-green;
     width: 80px;
     height: 80px;
     left: 0;
     top: 0;
+
+    background-color: @bg-green;
   }
 
   .instructions-list__item:nth-child(1)::after {
@@ -167,6 +177,7 @@
     height: 50px;
     left: 15px;
     top: 15px;
+
     background-image: url("../img/advantage-leaf@1x.png");
   }
 
@@ -177,35 +188,37 @@
     height: 50px;
     left: 15px;
     top: 15px;
+
     background-image: url("../img/advantage-powder@1x.png");
   }
 
   .instructions-list__item:nth-child(3)::after {
     position: absolute;
     content: "";
-    background-image: url("../img/advantage-dining@1x.png");
     width: 50px;
     height: 50px;
     left: 15px;
     top: 15px;
+    background-image: url("../img/advantage-dining@1x.png");
   }
 
   .instructions-list__item:nth-child(4)::after {
     position: absolute;
     content: "";
-    background-image: url("../img/advantage-clock@1x.png");
     width: 50px;
     height: 50px;
     left: 15px;
     top: 15px;
+
+    background-image: url("../img/advantage-clock@1x.png");
   }
 
   .instructions-list__number {
     position: absolute;
     clip: auto;
     overflow: visible;
-    top: -100px;
-    left: 126px;
+    top: -107px;
+    left: 118px;
 
     font-family: "Oswald-Regular", "Arial", sans-serif;
     font-size: 281px;
@@ -252,7 +265,7 @@
   }
 
   .promo-instructions__header {
-    margin-top: 69px;
+    margin-top: 73px;
     padding-left: 0;
   }
 }
