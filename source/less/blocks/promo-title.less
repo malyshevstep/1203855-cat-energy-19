@@ -28,6 +28,13 @@
   background-repeat: no-repeat;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .promo-title::after {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px 305px;
+  }
+}
+
 .promo-title__header {
   min-width: 245px;
   height: 74px;
@@ -60,7 +67,7 @@
   align-items: center;
   width: 87.5%;
   height: 40px;
-  margin-top: 3px;
+  margin-top: 0;
 
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 14px;
@@ -79,6 +86,8 @@
 
 .promo-title__image {
   margin-top: 26px;
+  width: 280px;
+  height: 270px;
 }
 
 @media (min-width: @tablet-width) {
@@ -91,12 +100,13 @@
 
   .promo-title__wrapper {
     display: block;
+    padding: 0 30px;
   }
 
   .promo-title__header {
     width: 420px;
     height: 122px;
-    margin-top: 52px;
+    margin-top: 61px;
     padding-left: 88px;
 
     font-size: 60px;
@@ -118,23 +128,25 @@
   }
 
   .promo-title__image {
-    display: none;
-  }
+    width: 709px;
+    max-width: 680px;
+    height: 609px;
+    margin-top: -8px;
+    margin-left: 36px;
 
-  .promo-title__image-tablet {
-    display: block;
+    object-fit: contain;
   }
 
   .promo-title__button {
     position: absolute;
-    top: 32%;
+    top: 27.5%;
     width: 245px;
     height: 52px;
-    margin-left: 90px;
+    margin-left: 93px;
 
     font-family: "Oswald-Regular", "Arial", sans-serif;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: 400;
   }
 
   .promo-title__button:hover {
@@ -160,8 +172,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding-left: 82px;
-    padding-top: 105px;
+    padding-left: 80px;
+    padding-right: 0;
+    padding-top: 98px;
   }
 
   .promo-title__header {
@@ -187,14 +200,12 @@
     margin-left: 39px;
   }
 
-  .promo-title__image-tablet {
-    display: none;
-  }
-
-  .promo-title__image-desktop {
-    display: block;
+  .promo-title__image {
     position: absolute;
-    top: 25px;
+    width: 552px;
+    height: 499px;
+    margin: 0;
+    top: 18px;
     left: 491px;
 
     z-index: 100;

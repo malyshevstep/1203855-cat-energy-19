@@ -51,32 +51,35 @@
 .programs-list__item::before {
   position: absolute;
   content: "";
-  background-color: @bg-green;
   width: 50px;
   height: 51px;
-  border-radius: 50%;
   left: 22px;
   top: 24px;
+
+  background-color: @bg-green;
+  border-radius: 50%;
 }
 
 .programs-list__item:nth-child(1)::after {
   position: absolute;
   content: "";
-  background-image: url("../img/icon-cat-slim.svg");
   width: 35px;
   height: 49px;
   left: 30px;
   top: 22px;
+
+  background-image: url("../img/icon-cat-slim.svg");
 }
 
 .programs-list__item:nth-child(2)::after {
   position: absolute;
   content: "";
-  background-image: url("../img/icon-cat-pro.svg");
   width: 67px;
   height: 28px;
   left: 13px;
   top: 35px;
+
+  background-image: url("../img/icon-cat-pro.svg");
 }
 
 .programs-list__description {
@@ -84,7 +87,7 @@
   padding: 0;
   margin: 0 20px;
 
-  font-family: "ArialMT", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   padding-top: 4px;
@@ -104,15 +107,29 @@
   text-transform: uppercase;
 }
 
+.programs-list__link:active {
+  opacity: 0.3;
+}
+
 .programs-list__link::after {
   position: absolute;
   content: "";
-  background-image: url("../img/icon-right-arrow-long.svg");
-  background-repeat: no-repeat;
   width: 25px;
   height: 12px;
   left: 117px;
   top: 22px;
+
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+}
+
+.programs-list__link:hover::after {
+  width: 34px;
+  height: 12px;
+
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+  transition: 0.3s;
 }
 
 @media (min-width: @tablet-width) {
@@ -135,6 +152,10 @@
     background-color: #f2f2f2;
   }
 
+  .programs-list__item:last-child {
+    margin-top: 29px;
+  }
+
   .programs-list__item:nth-child(1) {
     margin: 0;
   }
@@ -142,56 +163,60 @@
   .programs-list__item::before {
     position: absolute;
     content: "";
-    background-color: @bg-green;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
     left: 63%;
     top: 24%;
+
+    background-color: @bg-green;
+    border-radius: 50%;
   }
 
   .programs-list__item:nth-child(1)::after {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
     width: 141px;
     height: 194px;
     left: 67.3%;
     top: 20.5%;
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
   }
 
   .programs-list__item:nth-child(2)::after {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-cat-pro.svg");
-    background-repeat: no-repeat;
     width: 268px;
     height: 113px;
     left: 58%;
     top: 37%;
+
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
   }
 
   .programs-list__title {
     position: relative;
-    padding-left: 55px;
+    padding-left: 54px;
     margin-top: 77px;
     margin-bottom: 26px;
+
     font-size: 36px;
     text-align: left;
     line-height: 36px;
-    font-weight: normal;
+    font-weight: 400;
     text-transform: uppercase;
   }
 
   .programs-list__description {
     width: 53%;
     padding: 0;
-    padding-left: 52px;
+    padding-left: 55px;
     margin: 0;
     margin-bottom: 50px;
 
-    font-family: "ArialMT", sans-serif;
+    font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #444444;
@@ -206,12 +231,18 @@
     position: relative;
     padding: 0;
     margin-left: 53px;
-    margin-bottom: 62px;
+    margin-bottom: 58px;
+    width: fit-content;
+    padding-right: 40px;
 
     color: #111111;
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
+  }
+
+  .programs-list__link:active {
+    opacity: 0.3;
   }
 
   .programs-list__link::after {
@@ -221,7 +252,7 @@
     background-repeat: no-repeat;
     width: 24px;
     height: 11px;
-    left: 20%;
+    left: 91%;
     top: 10px;
   }
 }
@@ -305,6 +336,6 @@
   }
 
   .programs-list__link::after {
-    left: 25.5%;
+    left: 90.5%;
   }
 }
