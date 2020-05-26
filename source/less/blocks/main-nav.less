@@ -1,0 +1,30 @@
+.main-nav {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: height 0.5s, opacity 0.25s;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    visibility: visible;
+    min-height: 59px;
+    min-width: 62%;
+    height: auto;
+    clip: initial;
+    position: relative;
+
+    opacity: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    min-width: 478px;
+    min-height: 70px;
+  }
+}
