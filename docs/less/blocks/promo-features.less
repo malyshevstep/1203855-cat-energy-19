@@ -1,0 +1,38 @@
+.promo-features {
+  min-width: 320px;
+}
+
+.promo-features__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.promo-features__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .promo-features {
+    min-height: 774px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-features {
+    width: 100%;
+    min-height: 372px;
+    margin-top: 209px;
+  }
+
+  .promo-features__wrapper {
+    max-width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
